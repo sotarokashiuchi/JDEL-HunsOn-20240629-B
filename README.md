@@ -6,6 +6,7 @@
 
 ## 開発者
 - 各受講生の名前を記入してください。
+- KashiuchiSotaro
 - RioRio-do
 
 ## 数値解析ソフト
