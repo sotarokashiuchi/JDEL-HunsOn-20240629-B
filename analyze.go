@@ -47,7 +47,9 @@ func IsNegativeNumber(number int) {
 // ゼロとは「0」
 // ex) 0
 func IsZeroNumber(number int) {
-
+	if number == 0 {
+		fmt.Println(number, "はゼロです")
+	}
 }
 
 // 10の倍数判定関数。与えられた引数が10の倍数の場合、その趣旨を表示する
