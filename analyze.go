@@ -94,7 +94,26 @@ func IsPerfectNumber(number int) {
 // 親和数とは「自身を除く約数の和が、他方に等しい自然数の組」
 // ex) 220と284, 1184と1210, 2620と2924,...
 func IsAmicableNumbers(x, y int) {
+	var sum = 0
+	for i := 1; i < x; i++ {
+		if x%i == 0 {
+			sum = i + sum
+		}
+	}
+	if sum != y {
+		return
+	}
 
+	sum = 0
+	for i := 1; i < y; i++ {
+		if y%i == 0 {
+			sum = i + sum
+		}
+	}
+	if sum != x {
+		return
+	}
+	fmt.Println(x, "と", y, "は親和数です")
 }
 
 // 平方数。与えられた引数が平方数の場合、その趣旨を表示する
