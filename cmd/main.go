@@ -2,10 +2,9 @@
 package main
 
 import (
-	"fmt"
 	"analyze"
+	"fmt"
 )
-
 
 // 入力を受付、入力された整数の個数に合わせて各解析用関数を呼び出す関数。
 func main() {
@@ -39,6 +38,7 @@ func main() {
 		analyze.IsSafePrime(inputNumber[0])
 		analyze.IsKaprekarNumber(inputNumber[0])
 		analyze.IsFibonacciNumber(inputNumber[0])
+		analyze.IsZeroNumber(inputNumber[0])
 	case 2:
 		analyze.IsAmicableNumbers(inputNumber[0], inputNumber[1])
 		analyze.IsBetrothedNumber(inputNumber[0], inputNumber[1])
