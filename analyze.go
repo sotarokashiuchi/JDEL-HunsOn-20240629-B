@@ -75,7 +75,6 @@ func IsPrimeNumber(number int) {
 	j = int(math.Sqrt(float64(number)))
 	for i = 2; i < j; i++ {
 		if number%i == 0 {
-			fmt.Println(number, "は素数ではありません")
 			k = 1
 			break
 		}
