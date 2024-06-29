@@ -8,6 +8,7 @@
 - 各受講生の名前を記入してください。
 - GOTTEENg0tten
 - KashiuchiSotaro
+- RioRio-do
 - Shimo
 
 ## 数値解析ソフト
