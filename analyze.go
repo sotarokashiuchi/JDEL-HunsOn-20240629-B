@@ -31,8 +31,6 @@ func IsGrothendieckPrime(number int) {
 func IsPositiveNumber(number int) {
 	if number > 0 {
 		fmt.Println(number, "正の整数です❤")
-	} else {
-		fmt.Println(number, "負の整数です❤")
 	}
 }
 
