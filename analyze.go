@@ -1,7 +1,10 @@
 // 数値解析パッケージ
 package analyze
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 // 奇数判定関数。与えられた引数が奇数の場合、その趣旨を表示する
 // 奇数とは、「2で割り切れない整数」
@@ -68,14 +71,17 @@ func IsRepunitNumber(number int) {
 // 素数とは「1を除く約数が1とその数自身だけである自然数」
 // ex) 2, 3, 5, 7, ...
 func IsPrimeNumber(number int) {
-	var i, j int
-	j = number
+	var i, j, k int
+	j = int(math.Sqrt(float64(number)))
 	for i = 2; i < j; i++ {
-		if number/i == 0 {
+		if number%i == 0 {
 			fmt.Println(number, "は素数ではありません")
-		} else {
-			fmt.Println(number, "は素数です")
+			k = 1
+			break
 		}
+	}
+	if k != 1 {
+		fmt.Println(number, "は素数です")
 	}
 }
 
