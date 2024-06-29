@@ -6,7 +6,10 @@
 
 ## 開発者
 - 各受講生の名前を記入してください。
--Higashiyama Taisuke
+- GOTTEENg0tten
+- KashiuchiSotaro
+- RioRio-do
+- Higashiyama Taisuke
 
 ## 数値解析ソフト
 - 与えられた整数の特性を解析し、表示するソフト
