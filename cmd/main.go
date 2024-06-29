@@ -40,6 +40,7 @@ func main() {
 		analyze.IsFibonacciNumber(inputNumber[0])
 		analyze.IsPositiveNumber(inputNumber[0])
 		analyze.IsZeroNumber(inputNumber[0])
+		analyze.IsMultipleOfTen(inputNumber[0])
 	case 2:
 		analyze.IsAmicableNumbers(inputNumber[0], inputNumber[1])
 		analyze.IsBetrothedNumber(inputNumber[0], inputNumber[1])

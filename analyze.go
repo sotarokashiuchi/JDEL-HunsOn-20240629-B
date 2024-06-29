@@ -56,7 +56,9 @@ func IsZeroNumber(number int) {
 // 10の倍数とは「10で割り切れる数」
 // ex) 10, 20, 30, ...
 func IsMultipleOfTen(number int) {
-
+	if number%10 == 0 {
+		fmt.Println(number, "は10の倍数です")
+	}
 }
 
 // レピュニット数判定関数。与えられた引数がレピュニット数の場合、その趣旨を表示する
@@ -77,7 +79,15 @@ func IsPrimeNumber(number int) {
 // 完全数とは「自身を除く約数の和が自身に等しい数の自然数」
 // ex) 6, 28, 496, ...
 func IsPerfectNumber(number int) {
-
+	var sum = 0
+	for i := 1; i < number; i++ {
+		if number%i == 0 {
+			sum = i + sum
+		}
+	}
+	if number == sum {
+		fmt.Println(number, "は完全数です")
+	}
 }
 
 // 親和数判定関数。与えられた引数が親和数の場合、その趣旨を表示する
