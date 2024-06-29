@@ -29,7 +29,9 @@ func IsGrothendieckPrime(number int) {
 // 正の整数とは「0より大きい整数」
 // ex) 1, 2, 3, 4, ...
 func IsPositiveNumber(number int) {
-
+	if number > 0 {
+		fmt.Println(number, "正の整数です❤")
+	}
 }
 
 // 負の整数判定関数。与えられた引数が負の整数の場合、その趣旨を表示する
