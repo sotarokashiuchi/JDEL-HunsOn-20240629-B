@@ -9,6 +9,7 @@
 - GOTTEENg0tten
 - KashiuchiSotaro
 - RioRio-do
+- Higashiyama Taisuke
 - Shimo
 
 ## 数値解析ソフト
