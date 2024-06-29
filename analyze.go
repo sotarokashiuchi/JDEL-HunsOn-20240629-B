@@ -111,7 +111,26 @@ func IsMersenneNumber(number int) {
 // 婚約数とは「1と自身を除いた約数の和が互いに他方に等しい自然数の組」
 // ex) 48と75, 140と195, 1050と1925, ...
 func IsBetrothedNumber(x, y int) {
+	var sum = 0
+	for i := 2; i < x; i++ {
+		if x%i == 0 {
+			sum = i + sum
+		}
+	}
+	if sum != y {
+		return
+	}
 
+	sum = 0
+	for i := 2; i < y; i++ {
+		if y%i == 0 {
+			sum = i + sum
+		}
+	}
+	if sum != x {
+		return
+	}
+	fmt.Println(x, "と", y, "は婚約数です")
 }
 
 // ピタゴラス数判定関数。与えられた引数がピタゴラス数の場合、その趣旨を表示する
