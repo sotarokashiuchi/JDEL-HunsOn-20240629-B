@@ -6,7 +6,7 @@
 
 ## 開発者
 - 各受講生の名前を記入してください。
-
+- GOTTEENg0tten
 ## 数値解析ソフト
 - 与えられた整数の特性を解析し、表示するソフト
 - [参考サイト](https://blog-knowledgequiz.com/number/)
