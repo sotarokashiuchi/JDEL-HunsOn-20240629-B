@@ -1,7 +1,10 @@
 // 数値解析パッケージ
 package analyze
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 // 奇数判定関数。与えられた引数が奇数の場合、その趣旨を表示する
 // 奇数とは、「2で割り切れない整数」
@@ -38,9 +41,7 @@ func IsPositiveNumber(number int) {
 // 負の整数とは「0より小さい整数」
 // ex) -1, -2, -3, -4, ...
 func IsNegativeNumber(number int) {
-	if number < 0 {
-		fmt.Println("負の整数です")
-	}
+
 }
 
 // ゼロ判定関数。与えられた引数がゼロの場合、その趣旨を表示する
@@ -72,22 +73,24 @@ func IsRepunitNumber(number int) {
 // 素数とは「1を除く約数が1とその数自身だけである自然数」
 // ex) 2, 3, 5, 7, ...
 func IsPrimeNumber(number int) {
-
+	var i, j, k int
+	j = int(math.Sqrt(float64(number)))
+	for i = 2; i < j; i++ {
+		if number%i == 0 {
+			k = 1
+			break
+		}
+	}
+	if k != 1 {
+		fmt.Println(number, "は素数です")
+	}
 }
 
 // 完全数判定関数。与えられた引数が完全数の場合、その趣旨を表示する
 // 完全数とは「自身を除く約数の和が自身に等しい数の自然数」
 // ex) 6, 28, 496, ...
 func IsPerfectNumber(number int) {
-	var sum = 0
-	for i := 1; i < number; i++ {
-		if number%i == 0 {
-			sum = i + sum
-		}
-	}
-	if number == sum {
-		fmt.Println(number, "は完全数です")
-	}
+
 }
 
 // 親和数判定関数。与えられた引数が親和数の場合、その趣旨を表示する
