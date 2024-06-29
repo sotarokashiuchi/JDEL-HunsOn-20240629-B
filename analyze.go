@@ -40,7 +40,9 @@ func IsPositiveNumber(number int) {
 // 負の整数とは「0より小さい整数」
 // ex) -1, -2, -3, -4, ...
 func IsNegativeNumber(number int) {
-
+	if number < 0 {
+		fmt.Println("負の整数です")
+	}
 }
 
 // ゼロ判定関数。与えられた引数がゼロの場合、その趣旨を表示する

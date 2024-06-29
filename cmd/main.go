@@ -38,7 +38,7 @@ func main() {
 		analyze.IsSafePrime(inputNumber[0])
 		analyze.IsKaprekarNumber(inputNumber[0])
 		analyze.IsFibonacciNumber(inputNumber[0])
-		analyze.IsPositiveNumber(inputNumber[0])
+		analyze.IsNegativeNumber(inputNumber[0])
 		analyze.IsZeroNumber(inputNumber[0])
 		analyze.IsMultipleOfTen(inputNumber[0])
 	case 2:
